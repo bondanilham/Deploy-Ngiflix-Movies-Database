@@ -123,8 +123,8 @@ export default function PublicHome(){
                     <div className="flex-wrap">
                     <p className="text-white p-1">Sort By:</p>
                     <div className="flex gap-2">
-                        <button onClick={() => {setSort("ASC"); setPage(1)}} className={`rounded p-1 mb-1 cursor-pointer transition-colors ${sort === "ASC" ? "bg-[#ffa31a] text-black font-bold" : "bg-[#ffa31a] text-black hover:bg-orange-500"}`}>Newest</button>
-                        <button onClick={() => {setSort("DESC"); setPage(1)}} className={`rounded p-1 mb-1 cursor-pointer transition-colors ${sort === "DESC" ? "bg-[#ffa31a] text-black font-bold" : "bg-[#ffa31a] text-black hover:bg-orange-500"}`}>Oldest</button>
+                        <button onClick={() => {setSort("DESC"); setPage(1)}} className={`rounded p-1 mb-1 cursor-pointer transition-colors ${sort === "DESC" ? "bg-[#ffa31a] text-black font-bold" : "bg-[#ffa31a] text-black hover:bg-orange-500"}`}>Newest</button>
+                        <button onClick={() => {setSort("ASC"); setPage(1)}} className={`rounded p-1 mb-1 cursor-pointer transition-colors ${sort === "ASC" ? "bg-[#ffa31a] text-black font-bold" : "bg-[#ffa31a] text-black hover:bg-orange-500"}`}>Oldest</button>
                     </div>
                     </div>
                 </div>
