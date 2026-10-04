@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 
 // import './App.css'
 import PublicHome from './pages/PublicHome';
@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<BaseLayout/>}>
-            <Route path='/' element={<PublicHome />} />
+            <Route path='/' element={<Navigate to="/pub/movies" replace />} />
             <Route path='/pub/movies' element={<PublicHome />} />
             <Route path='/pub/genres' element={<PublicGenres />} />
             <Route path='/pub/movies/:id' element={<MovieDetails />} />

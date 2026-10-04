@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import BaseLayout from "./pages/BaseLayout";
 
 import LoginPage from "./pages/LoginPage";
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="users/login" element={<LoginPage />} />
           <Route element={<BaseLayout />}>
-            <Route path='/' element={<MoviesPage />} />
+            <Route path='/' element={<Navigate to="/movies" replace />} />
             <Route path='/movies' element={<MoviesPage />} />
             <Route path='/add/movies' element={<AddMovie />} />
             <Route path='/movies/edit/:id' element={<EditMovie />} />
