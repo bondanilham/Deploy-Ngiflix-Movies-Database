@@ -15,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<BaseLayout/>}>
+            <Route path='/' element={<PublicHome />} />
             <Route path='/pub/movies' element={<PublicHome />} />
             <Route path='/pub/genres' element={<PublicGenres />} />
             <Route path='/pub/movies/:id' element={<MovieDetails />} />
