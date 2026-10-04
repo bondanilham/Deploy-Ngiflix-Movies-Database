@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-linear-to-b from-[#292929] from-70% to-[#1b1b1b] to-90% min-h-screen">  
+    
+    <!-- BG Gambar  -->
+    <div class="bg-[url(../../assets/1154.jpg)] bg-local bg-cover">
+
+    <!-- HEADER -->
+        <header class="flex justify-between p-5 bg-[#1b1b1b] rounded-b-2xl">
+            <div class="flex border-solid border-amber-50">
+                <a class="font-bold pt-1 text-white">Ngi</a>
+                <a class="bg-[#ffa31a] rounded text-black pr-1 pt-1">flix</a>
+            </div>
+            <div class="flex gap-1">
+                <a class="bg-[#ffa31a] rounded p-1">Movies</a>
+                <a class="bg-[#ffa31a] rounded p-1">Genres</a>
+            </div>
+            <a class="bg-[#ffa31a] rounded p-1">Log In</a>
+        </header>
+
+    <!-- Penjelasan ngiflix -->
+        <div class="text-white bg-linear-to-t from-[#00000088] from-[60%] to-[#ffffff44] pb-3">
+            <h1 class="text-center pt-5 text-4xl">
+                NGIFLIX
+            </h1>
+            <p class="text-center">Your most trusted source of Movies Database</p>
+        </div>
+    </div>
+
+    <!-- FILTER / SEARCH / SORT BY -->
+    <div class="flex p-3 justify-around">
+        <div class="flex-wrap gap-1 justify-center">
+            <p class="p-1 text-white">Filter:</p>
+            <div class="bg-[#ffa31a] p-1 rounded">
+                <select name="genre" id="" class="">
+                    <option value="1">Genre1</option>
+                    <option value="2">Genre2</option>
+                    <option value="3">Genre3</option>
+                </select>
+            </div>
+        </div>
+        <div >
+            <!-- <p class="text-white">SEARCH</p> -->
+            <form action="" class="gap-0 pt-3">
+                <input type="search" name="" placeholder="Search Movies" id="" class="bg-white p-1 pl-3 rounded-l-2xl">
+                <button type="submit" class="rounded-r-2xl bg-white p-1 pr-3">🔍</button>
+            </form>
+        </div>
+        <div class="flex-wrap gap-1">
+            <p class="text-white p-1">Sort By:</p>
+            <div>
+                <button class="bg-[#ffa31a] rounded p-1 mb-1">Newest</button>
+                <button class="bg-[#ffa31a] rounded p-1 mb-1">Oldest</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4 mx-auto max-w-7xl justify-items-center">
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/Project_Hail_Mary_poster.jpg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Project Hail Mary</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Sci-Fi • 2025</p>
+                
+                <button class="m-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        <div class="relative w-54 h-80 rounded-lg overflow-hidden hover:scale-110 duration-300 group">
+            <img src="../../assets/spiderman.jpeg" class="h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-4 bg-linear-to-t from-[#00000088] from-[10%] to-[#ffffff44]">
+                
+                <h3 class="text-white text-lg font-bold">Spider-man</h3>
+                
+                <p class="text-gray-300 text-sm mt-1">Action • 2014</p>
+                
+                <button class="mt-3 opacity-100 bg-blue-600 text-white p-4 pt-1.5 pb-1.5 rounded hover:bg-blue-700 w-full">Details</button>
+            </div>
+        </div>
+        
+        <!-- <div>
+            <a href="" class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs hover:bg-neutral-secondary-medium">
+                <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">Noteworthy technology acquisitions 2021</h5>
+                <p class="text-body">Here are the biggest technology acquisitions of 2025 so far, in reverse chronological order.</p>
+            </a>
+        </div> -->
+    </div>
+
+    <div>
+
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="p-3 flex text-white gap-3 justify-center">
+        <a href="">&lt;</a>
+        <a href="">currentPage</a>
+        /
+        <a href="">maxPage</a>
+        <a href="">&gt;</a>
+    </div>
+
+    <div class="items-center">
+        <p>Testimonies:</p>
+        <div class="flex text-white justify-center gap-3">
+            <div>
+                <a class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs hover:bg-neutral-secondary-medium">
+                    <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">"The best Movie DB I've ever used."</h5>
+                    <p class="text-body">-Christopher Nolan, director of Interstellar</p>
+                </a>
+            </div>
+            <div>
+                <a class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs hover:bg-neutral-secondary-medium">
+                    <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">"HEEHEEEEE. SHAMONE!"</h5>
+                    <p class="text-body">-Michael Jackson</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
