@@ -51,9 +51,9 @@ export default function NavBar(){
                             className="hover:scale-110 transition-transform duration-300"
                         >
                             <img 
-                                src=".src/assets/github.webp" 
+                                src="./src/assets/github.webp" 
                                 alt="GitHub Profile" 
-                                className="w-10 h-10 object-contain" 
+                                className="w-10 h-10 object-contain text-white" 
                             />
                         </a>
                     </div>
