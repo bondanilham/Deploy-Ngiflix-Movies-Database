@@ -5,8 +5,8 @@ export default function Cards({movie}){
     const navigate = useNavigate()
 
     const handleDetails = () => {
-        navigate(`/pub/movies/${movie.id}`);
-    };
+        navigate(`/pub/movies/${movie.id}`)
+    }
     
     return(
         <>

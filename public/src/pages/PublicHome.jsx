@@ -50,15 +50,15 @@ export default function PublicHome(){
 
     const handlePrev = () => {
         if (page > 1) {
-            setPage(page - 1);
+            setPage(page - 1)
         }
-    };
+    }
 
     const handleNext = () => {
         if (page < maxPage) {
-            setPage(page + 1);
+            setPage(page + 1)
         }
-    };
+    }
     
     useEffect(() =>{
         fetchGenres()
